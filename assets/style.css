@@ -1,0 +1,144 @@
+body,
+html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: "rb-light";
+    src: url("/assets/fonts/Roboto-Light.ttf");
+}
+
+/* @font-face {
+    font-family: "rb-medium";
+    src: url("/assets/fonts/Roboto-Bold.ttf");
+} */
+
+/* @font-face {
+    font-family: "FM_Malithi";
+    src: url("/assets/fonts/7 FM_Malithi sinhala font by Aluth.com.ttf");
+} */
+
+h2,
+p {
+    /* font-family: "FM_Malithi"; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100%;
+    background: #000000cc;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#jClock {
+    font-family: 'rb-medium', sans-serif;
+    line-height: 1;
+    color: #22272b;
+    font-size: 6em;
+}
+
+#jDate {
+    font-family: 'rb-light', sans-serif;
+    text-align: right;
+    color: #4c4c4c;
+    font-size: 47px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.d-show {
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+    /* text-shadow: -4px 1px 25px rgb(14 64 115 / 59%); */
+}
+
+.im-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.im-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 5em;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.mt-text {
+    margin-top: 0 !important;
+    font-size: 2em;
+}
+
+.font-rob {
+    font-family: "rb-medium" !important;
+
+}
+
+.tag-line {
+    line-height: 1.5;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    margin-top: 0;
+    color: #fff;
+    font-weight: 300;
+}
+
+.wlecome-text {
+    font-family: "FM_Malithi";
+    position: fixed;
+    right: 0;
+    padding: 20px 40px;
+    top: 0;
+    text-align: right;
+    /* max-width: 400px; */
+    background: rgb(122, 122, 122);
+    background: linear-gradient(90deg, rgba(122, 122, 122, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.wlecome-text img {
+    width: 71%;
+}
+
+
+@media only screen and (max-width: 1238px) {
+    .d-show {
+        zoom: 0.8;
+        padding: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+    .d-show {
+        zoom: 0.5;
+        padding: 90px 35px;
+    }
+
+    .wlecome-text {
+        padding: 36px 0;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .d-show {
+        zoom: 0.4;
+    }
+
+    .wlecome-text {
+        padding: 26px 0;
+    }
+}
